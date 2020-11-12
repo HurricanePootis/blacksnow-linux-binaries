@@ -1,0 +1,29 @@
+These are instructions to install Black Snow Binaries for Linux.
+
+1a.
+	a. Download Source SDK Base 2013 Singleplayer On Steam
+	b. Enable "upcoming" under Beta in Game Properties
+
+1b.
+	a. Download V 1.05 of Black Snow here: https://www.moddb.com/mods/black-snow/downloads/black-snow-v-1011
+	b. Download Source SDK Base 2013 Singeplayer Patches here: https://www.moddb.com/mods/black-snow/downloads/black-snow-patch-source-sdk-2013
+	
+2.
+	a. Extract "BLACKSNOW_V1_05.7z"
+	b. Extract "BlackSnow_Fix_12_10_15.zip", and drag-and-drop its contets into the "blacksnow" folder. Replace any duplicates.
+	c. Go into "game/hl2_mod" (the one you cloned from github), and copy-and-paste everything into your "blacksnow" folder.
+
+3.
+	a. Due to the fact that Source on linux will only load files if they are lowercase, we will want to rename all materials and models to their lowercase counterparts. In this repo, I
+	have included a wonderful script that will rename all files in a directory, then the directory itself. Script from here:https://www.tecmint.com/rename-all-files-and-directory-names-to-lowercase-in-linux/
+	b. In blacksnow folder, do the following: "./rename-files.sh materials/" then "./rename-files.sh models/" then "./rename-files.sh sounds/" then "./rename-files.sh particles" then
+	"rename-files.sh shaders/".
+		b1. If you want, you can do "./rename-files ./", but I have encountered some errors with it not being able to move some files, but nothing too bad. :]
+
+4.
+	a. Move your "blacksnow" folder from where ever it currently is, to your sourcemods folder at "~/.steam/steam/steamapps/sourcemods"
+	b. Restart steam
+
+
+Black Snow should now show up in your library. If you encounter any problems during the instalation process, you can always contact me on Discord here: "Hurricane Pootis#6285".
+Do not contact me for any gameplay problems that is not preset!!! I am not a developer, just someone who can build from source.
